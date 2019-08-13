@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Adapts library load path to include Qt libraries found in the root folder of the launcher's binary file.
+# "Tibia" shouldn't be called directly to prevent needed libraries not being found.
+
+SCRIPT=$(readlink -f "$0")
+PATH=$(dirname "$SCRIPT")
+export FREETYPE_PROPERTIES="truetype:interpreter-version=38"
+
+LD_LIBRARY_PATH="$PATH:/usr/lib/openssl-1.0/" exec "/home/$USER/kod/Tibia/Tibia"

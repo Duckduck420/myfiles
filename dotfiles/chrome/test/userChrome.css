@@ -1,0 +1,248 @@
+/* AGENT_SHEET */
+@import "file:///home/kkona/.cache/wal/colors.css";
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+
+/* Place menu button and panel ui button at the left. Can't do this in customize mode. */
+
+/* Anonymous elements that do nothing. */
+#navigator-toolbox::after, #tabbrowser-tabs::before, .tabbrowser-tab::after, .tabbrowser-tab::before, .toolbar-primary::after {
+    display: none !important;
+}
+
+/*
+ *  Urlbar
+ */
+
+
+#urlbar-container {
+    min-width: 250px !important;
+    background: var(--background) !important;
+}
+
+#urlbar-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--background) !important;
+}
+
+#urlbar {
+    margin: 0 !important;
+    padding: 0 0 0 0 !important;
+    border: none !important;
+    text-align: center;
+    background: var(--background) !important;
+    font-family: Dina !important;
+    font-size: 14px !important;
+    color: var(--foreground) !important;
+}
+
+#back-button, #forward-button, #PanelUI-menu-button, #PanelUI-button, #pageActionButton, #page-proxy-favicon {
+    display: none !important;
+}
+
+#reader-mode-button[readeractive="true"] {
+    filter: grayscale(100%) brightness(30) !important;
+}
+
+#identity-icon {
+    filter: grayscale(100%) !important;
+}
+
+/* Hiding this in customize mode breaks that mode. */ 
+#main-window:not([customizing]) #nav-bar {
+    /*display: none !important;*/
+}
+
+#ctraddon_extra-bar, #customToolbars, #PersonalToolbar,
+#addon-bar, #nav-bar, #toolbar-menubar {
+    padding: 0 !important;
+    
+}
+
+.urlbar-history-dropmarker, #urlbar-go-button, 
+#urlbar-reload-button, #urlbar-stop-button {
+    display: none !important;
+}
+
+#identity-icon-labels { 
+    display: none !important; 
+}
+
+#identity-box {
+    width: 23px !important; 
+    height: inherit !important;
+    min-width: 0 !important;  
+    min-height: 0 !important;
+    border: 0 !important;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+#tracking-protection-icon, #connection-icon {
+    display: none !important;
+}
+
+#notification-popup-box {
+    position: static !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+#identity-icon {
+    display: none;
+}
+
+#page-proxy-favicon[pageproxystate="invalid"] {
+    opacity: 0.3 !important;
+}
+
+
+
+/*
+ *  Toolbars
+ */
+
+.toolbar-primary,
+#TabsToolbar,
+.browserContainer > findbar {
+    height: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: var(--background) !important;
+    -moz-appearance: none !important;
+    transition: none !important;
+}
+
+#tabs-closebutton, #ctraddon_tabs-closebutton, #alltabs-button, 
+#private-browsing-indicator {
+    display: none !important;
+}
+
+/* 
+ *  Tabs
+ */
+
+
+#tabbrowser-tabs {
+    min-height: 0 !important;
+    background: transparent !important;
+
+}
+
+.tabbrowser-tab {
+    background: transparent !important;
+    font-family: Dina !important;
+    font-size: 14px !important;
+    color: var(--foreground) !important;
+    border: none !important;
+    padding: 0 0 0 0 !important;
+}
+
+.tabbrowser-tab > .tab-stack {
+    padding: 0 0 0 18px !important;
+    text-align: center;
+
+}
+
+.tabbrowser-tab[selected=false] {
+    font-weight: bold !important;
+}
+
+.tab-background-start, .tab-background-end, .tab-icon {
+    display: none !important;
+}
+
+.tab-background-middle, .tab-background, .tab-content, 
+.tab-text-stack, .arrowscrollbox-scrollbox {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: inherit !important;
+}
+/* Progressbar from tab mix plus. */
+.tab-progress {
+    margin: 0 !important;
+}
+
+
+
+
+
+
+.tabbrowser-tab .tab-icon-image {
+    display: none !important;
+}
+
+
+
+  .tabbrowser-tab[fadein]:not([pinned]) { min-width: 100px !important; max-width: /*180px*/ 100% !important; }
+    tab {
+        font-family: var(--tab-fonts) !important;
+        height: var(--tab-height) !important; min-height: var(--tab-height) !important;
+        /*background: var(--bg-dark) !important; color: var(--fg-dark) !important;*/
+        background: var(--background) !important; color: var(--background) !important;
+        font-size: var(--tab-font-size); text-shadow: none !important; text-align: var(--tab-text-align) !important;
+    }
+    
+    .tabbrowser-tab * {
+        background: none !important; list-style-image: none !important;
+        margin: 0 0 0 0 !important; padding: 0 0 0 0 !important;
+        -moz-appearance: none !important;
+    }
+    .tabbrowser-tab[selected="true"] .tab-stack {
+        /*background: #1F2235 !important; color: #a87c4b !important;*/
+        background: var(--background) !important; color: var(--color4) !important;
+        border-radius: 0px !important; position: relative !important;
+        /*border-top: 1px solid var(--background) !important;/**/
+    }
+
+    .tabbrowser-line[selected="true"] {
+        opacity: 1 !important;
+    }
+
+
+
+/* 
+
+.scrollbutton-up, .scrollbutton-down,
+.browserContainer .findbar-find-previous.tabbable,
+.browserContainer .findbar-find-next.tabbable {
+    /* right arrow triangle icon */
+    list-style-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"><path fill="%23fff" d="m11.4 1.95 0.000001 5.05v5.05l-4.4-2.48-4.37-2.52 4.37-2.52z"/></svg>') !important;
+}
+
+.browserContainer .findbar-find-previous {
+    transform: rotate(90deg) !important;
+}
+.browserContainer .findbar-find-next {
+    transform: rotate(-90deg) !important;
+}
+
+.scrollbutton-up > .toolbarbutton-icon,
+.scrollbutton-down > .toolbarbutton-icon {
+    -moz-appearance: none !important;
+}
+
+/* Elements adjecent to scroll arrows (overflowing to tab). */
+.arrowscrollbox-overflow-end-indicator,
+.arrowscrollbox-overflow-start-indicator {
+    display: none !important;
+}
+
+/* Hover effect. */
+#identity-box:hover,
+.tabbrowser-tab:hover,
+#TabsToolbar toolbarbutton:hover,
+.browserContainer findbar toolbarbutton:hover {
+    /*background: #818A96 !important;*/
+    background: var(--color0) !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    transition-duration: 1ms !important;
+}

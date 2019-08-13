@@ -1,0 +1,74 @@
+# vim: set syntax=sh
+gap         14 0 0 0
+borderwidth 2
+snapdist    5
+
+fontname "lemon:size=11:antialias=true:hinting=full"
+
+color activeborder   "#0E0E0E"
+color inactiveborder "#0E0E0E"
+color menubg         "#151515"
+color menufg         "#d7d0c7"
+color font           "#d7d0c7"
+color selfont        "#151515"
+
+
+
+sticky     yes
+unbind-key all
+
+bind-key 4-Return urxvt
+bind-key 4-d      interrobang
+
+bind-key 4-h window-move-left-big
+bind-key 4-j window-move-down-big
+bind-key 4-k window-move-up-big
+bind-key 4-l window-move-right-big
+
+bind-key S4-h window-resize-left-big
+bind-key S4-j window-resize-down-big
+bind-key S4-k window-resize-up-big
+bind-key S4-l window-resize-right-big
+
+bind-key 4-x  window-maximize
+bind-key 4-z  window-vmaximize
+bind-key S4-t window-htile
+bind-key 4-t  window-vtile
+
+bind-key 4-f window-group
+bind-key 4-1 group-toggle-1
+bind-key 4-2 group-toggle-2
+bind-key 4-3 group-toggle-3
+bind-key 4-4 group-toggle-4
+bind-key 4-5 group-toggle-5
+bind-key 4-6 group-toggle-6
+bind-key 4-7 group-toggle-7
+bind-key 4-8 group-toggle-8
+
+bind-key S4-1 window-movetogroup-1
+bind-key S4-2 window-movetogroup-2
+bind-key S4-3 window-movetogroup-3
+bind-key S4-4 window-movetogroup-4
+bind-key S4-5 window-movetogroup-5
+bind-key S4-6 window-movetogroup-6
+bind-key S4-7 window-movetogroup-7
+bind-key S4-8 window-movetogroup-8
+
+bind-key 4-Tab  window-cycle
+bind-key S4-Tab window-rcycle
+
+bind-key 4-c  window-hide
+bind-key 4-w window-delete
+
+unbind-mouse M-1
+unbind-mouse M-2
+unbind-mouse M-3
+bind-mouse   4-1 window-move
+bind-mouse   4-2 window-lower
+bind-mouse   4-3 window-resize
+
+bind-key 4-s  menu-window
+bind-key S4-r restart
+bind-key S4-q quit
+
+

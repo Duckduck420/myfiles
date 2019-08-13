@@ -1,0 +1,21 @@
+network.port_range.set = 49165-49165
+dht = disable
+
+pieces.hash.on_completion.set = yes
+trackers.use_udp.set = yes
+protocol.encryption.set = allow_incoming,enable_retry,prefer_plaintext
+protocol.pex.set = no
+
+scgi_port = 127.0.0.1:5050
+encoding_list = UTF-8
+
+schedule = low_diskspace,5,60,close_low_diskspace=10240M
+
+directory.default.set = /opt/rtorrent/general
+session.path.set = /opt/rtorrent/session
+schedule2 = watch_directory,5,5,load.start=/opt/rtorrent/watch/*.torrent
+schedule2 = untied_directory,5,5,stop_untied=
+schedule2 = tied_directory,5,5,start_tied=
+
+
+

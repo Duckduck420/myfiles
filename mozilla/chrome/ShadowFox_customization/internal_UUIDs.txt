@@ -1,0 +1,15 @@
+firefox@betterttv.net=e518c5d0-3f36-4cc6-99f2-bf2934ca694b
+screenshots@mozilla.org=22974f43-7df5-4117-81ab-c1abfbe65f49
+{e58d3966-3d76-4cd9-8552-1582fbc800c1}=0e16dc26-391c-4b9f-ae52-ebce9e6827db
+{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}=66591e91-3d7a-4113-acfe-4011830e1a26
+jid1-BoFifL9Vbdl2zQ@jetpack=7f49f76b-5eec-47e0-9500-786ebdf52995
+frankerfacez@frankerfacez.com=0aec8049-4d59-43b1-8a2a-411b09183cce
+webcompat-reporter@mozilla.org=da080522-2ea6-41d4-9436-b41b26166eac
+jid1-xUfzOsOFlzSOXg@jetpack=3abbbc04-b372-489b-824e-62eec22c4d34
+webcompat@mozilla.org=036ac7a2-f6fa-48c4-968e-80ab4403c54f
+jid1-ZAdIEUB7XOzOJw@jetpack=b14de249-012f-453f-9b73-fee09568f184
+{73a6fe31-595d-460b-a920-fcc0f8843232}=b00f0d35-ee46-4a97-b44a-5f040b545c26
+uBlock0@raymondhill.net=e9295cf9-051b-4ace-a7df-8b7c0979011c
+https-everywhere@eff.org=94b4c1dc-4863-48a5-b45f-4ade6c38ff7f
+formautofill@mozilla.org=c8a8f4d3-3aad-46df-a8b7-9b32c1d043b8
+fxmonitor@mozilla.org=427dd593-cc36-4053-af75-cae1b5f1f507

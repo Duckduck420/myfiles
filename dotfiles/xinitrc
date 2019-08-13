@@ -1,0 +1,13 @@
+#!/bin/sh
+
+xset s off
+xset -dpms
+xmodmap $HOME/.Xmodmap
+xset m 1/1 9999
+xset r rate 170 100
+xcalib -d :0 /home/p1v07/myfiles/microboard_M340CLZ.icm
+xrdb $HOME/.Xresources
+~/.fehbg &
+sxhkd -c $HOME/.config/windowchef/sxhkdrc &
+
+exec windowchef -c $HOME/.config/windowchef/windowchefrc

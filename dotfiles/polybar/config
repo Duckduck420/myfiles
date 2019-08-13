@@ -1,0 +1,40 @@
+[bar/mybar]
+monitor = DP-0
+
+monitor-fallback = DVI-D-0
+
+
+width = 500
+height = 30
+
+offset-x = 10
+offset-y = 10
+
+background = #0000000
+foreground = #E0E0E0
+
+padding = 0
+
+modules-left = date
+modules-center = network
+
+font-0 = "Liberation Mono:pixelsize=14;1"
+font-1 = "Material Icons:antialias=false:size=14;2"
+
+[module/date]
+type = internal/date
+interval = 5
+date = %a %d %b
+date-alt = %Y-%m-%d
+time = %H:%M
+time-alt = %H:%M
+label = " %time% %date% "
+label-background = $(background)
+
+
+[module/network]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+label-connected = " %{F#ff0000} %{F-}%upspeed% %{F#00ff00} %{F-}%downspeed% "
+
